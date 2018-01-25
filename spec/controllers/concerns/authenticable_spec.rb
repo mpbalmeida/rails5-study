@@ -3,6 +3,7 @@ require 'rails_helper'
 RSpec.describe Authenticable do
     #Simular um controle anonimo que herda de ApplicationController
     controller(ApplicationController) do 
+      include Authenticable
     end
 
     let(:app_controller) { subject }
