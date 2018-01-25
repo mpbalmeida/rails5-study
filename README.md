@@ -10,14 +10,18 @@ Things you may want to cover:
 * System dependencies
 
 * Configuration
+```
     bundle install
+```
 * Database creation
 
 * Database initialization
 
 * How to run the test suite
     Create database task-manager-api_task
+    ```
     Exec bundle exec spring rspec
+    ```
 
 * Services (job queues, cache servers, search engines, etc.)
 
