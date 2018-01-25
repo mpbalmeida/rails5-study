@@ -3,7 +3,7 @@ class Api::V2::TaskSerializer < ActiveModel::Serializer
               :is_late
 
   def short_description
-    object.description[0..40] # a gem coloca um object do tipo task que será convertido e ele vai pegar os primeiros 40 caracteres
+    object.description[0..40] if object.description.present? # a gem coloca um object do tipo task que será convertido e ele vai pegar os primeiros 40 caracteres
   end
 
   def is_late
